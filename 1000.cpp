@@ -2,11 +2,21 @@
 using namespace std;
 int main()
 {
-    int T;
+    int T,n,i,a,b;
     cin>>T;
-    int a,b;
-    for(int i=1; i<=T; i++){
-        cin>>a>>b;
-        cout<<"Case "<<i<<": "<<a+b<<endl;
+    for(i=1; i<=T; i++)
+    {
+        cin>>n;
+        if(n<20)
+        {
+            a=n%10;
+            b=n-a;
+        }
+        else
+        {
+            a=10;
+            b=10;
+        }
+        cout<<a<<" "<<b<<endl;
     }
 }
